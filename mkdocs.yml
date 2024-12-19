@@ -1,0 +1,21 @@
+site_name: "ARES Wiki"
+nav:
+  - 首页: index.md
+  - PWN:
+      - 概述: pwn/overview.md
+  - 密码学:
+      - 基础知识: crypto/basics.md
+theme:
+  name: material
+  language: zh
+  font:
+    text: Roboto          # 正文字体
+    code: JetBrains Mono  # 代码字体
+markdown_extensions:
+  - admonition            # 支持提示框语法
+  - codehilite            # 代码高亮
+  - pymdownx.superfences  # 支持复杂的代码块语法
+  - tables                # 表格支持
+plugins:
+  - search                # 搜索功能
+  - minify                # HTML 文件压缩
