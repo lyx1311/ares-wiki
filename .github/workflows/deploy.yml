@@ -23,5 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdocs gh-deploy --force
