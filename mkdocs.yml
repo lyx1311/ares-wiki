@@ -19,3 +19,5 @@ markdown_extensions:
 plugins:
   - search                # 搜索功能
   - minify                # HTML 文件压缩
+extra:
+  deploy_branch: gh-pages
