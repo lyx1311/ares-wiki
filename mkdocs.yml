@@ -9,16 +9,28 @@ nav:
 theme:
   name: material
   language: zh
+  logo: images/logo.jpg
   font:
     text: Roboto          # 正文字体
     code: JetBrains Mono  # 代码字体
+  palette:
+    scheme: default       # 配色方案 (default, slate, aqua, etc.)
+    primary: white        # 主色
+    accent: pink          # 辅色
 markdown_extensions:
   - admonition            # 支持提示框语法
   - codehilite            # 代码高亮
   - pymdownx.superfences  # 支持复杂的代码块语法
+  - pymdownx.highlight    # 代码高亮
+  - pymdownx.tabbed       # 支持选项卡语法
   - tables                # 表格支持
 plugins:
   - search                # 搜索功能
   - minify                # HTML 文件压缩
 extra:
   deploy_branch: gh-pages
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ARES-rc
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
